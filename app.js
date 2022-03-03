@@ -72,11 +72,11 @@ const displayWeather= temp =>{
     innerTexts('thursday-condition',temp.next_days[7].comment)
     
     // weither friday
-    innerTexts('friday',temp.next_days[0].day)
-    weitherIcone('friday-weither-icone',temp.next_days[0].iconURL)
-    innerTexts('friday-max-tempratur',temp.next_days[0].max_temp.c)
-    innerTexts('friday-min-tempratur',temp.next_days[0].min_temp.c)
-    innerTexts('friday-condition',temp.next_days[0].comment)
+    innerTexts('friday',temp.next_days[1].day)
+    weitherIcone('friday-weither-icone',temp.next_days[1].iconURL)
+    innerTexts('friday-max-tempratur',temp.next_days[1].max_temp.c)
+    innerTexts('friday-min-tempratur',temp.next_days[1].min_temp.c)
+    innerTexts('friday-condition',temp.next_days[1].comment)
 }
 
 
