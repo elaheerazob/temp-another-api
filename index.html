@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature Hot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="search-input" type="text" class="form-control" placeholder="Enter a location for Weather ...">
+                <div class="input-group-append">
+                    <button onclick="searchButton()"  type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <h1 id="day">Tuesday</h1>
+            <img id="weither-icone" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+            <h1 id="city">Dhaka</h1>
+            <h3><span id="tempratur">38.06</span>&deg;C</h3>
+            <h1 id="condition" class="lead">Clouds</h1>
+        </div>
+
+
+         <!--  7 days weather  -->
+    <div class="row">
+        <div class="col-md-3">
+            <div class="text-white text-center bg-info">
+                <h1 id="saturday">Saturday</h1>
+                <img id="saturday-weither-icone" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+                <h3>Max:<span id="saturday-max-tempratur">38.06</span>&deg;C</h3>
+                <h3>Min:<span id="saturday-min-tempratur">38.06</span>&deg;C</h3>
+                <h1 id="saturday-condition" class="lead">Clouds</h1>
+            </div>
+        </div>
+        <hr class="my-2">
+        <div class="col-md-3">
+           <div class="text-white text-center bg-info">
+                    <h1 id="sunday">Sunday</h1>
+                    <img id="sunday-weither-icone" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+                    <h3>Max:<span id="sunday-max-tempratur">38.06</span>&deg;C</h3>
+                     <h3>Min:<span id="sunday-min-tempratur">38.06</span>&deg;C</h3>
+                    <h1 id="sunday-condition" class="lead">Clouds</h1>
+                </div>
+        </div>
+        <div class="col-md-3">
+            <div class="text-white text-center bg-info">
+                    <h1 id="monday">Monday</h1>
+                    <img id="monday-weither-icone" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+                    <h3>Max:<span id="monday-max-tempratur">38.06</span>&deg;C</h3>
+                    <h3>Min:<span id="monday-min-tempratur">38.06</span>&deg;C</h3>
+                    <h1 id="monday-condition" class="lead">Clouds</h1>
+                </div>
+        </div>
+        <div class="col-md-3">
+            <div class="text-white text-center bg-info">
+                    <h1 id="tuesday">Tuesday</h1>
+                    <img id="tuesday-weither-icone" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+                    <h3>Max:<span id="tuesday-max-tempratur">38.06</span>&deg;C</h3>
+                    <h3>Min:<span id="tuesday-min-tempratur">38.06</span>&deg;C</h3>
+                    <h1 id="tuesday-condition" class="lead">Clouds</h1>
+                </div>
+        </div>
+    </div>
+    <!-- 7 days  -->
+    
+        <div class="row">
+            <div class="col-md-3">
+                <div class="text-white text-center bg-info">
+                        <h1 id="wednesday">Wednesday</h1>
+                        <img id="wednesday-weither-icone" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+                        <h3>max:<span id="wednesday-max-tempratur">38.06</span>&deg;C</h3>
+                        <h3>Min:<span id="wednesday-min-tempratur">38.06</span>&deg;C</h3>
+                        <h1 id="wednesday-condition" class="lead">Clouds</h1>
+                    </div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-white text-center bg-info">
+                        <h1 id="thursday">Thursday</h1>
+                        <img id="thursday-weither-icone" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+                        <h3>Mix:<span id="thursday-max-tempratur">38.06</span>&deg;C</h3>
+                        <h3>Min:<span id="thursday-min-tempratur">38.06</span>&deg;C</h3>
+                        <h1 id="thursday-condition" class="lead">Clouds</h1>
+                    </div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-white text-center bg-info">
+                        <h1 id="friday">Friday</h1>
+                        <img id="friday-weither-icone" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+                        <h3>Max:<span id="friday-max-tempratur">38.06</span>&deg;C</h3>
+                        <h3>Min:<span id="friday-min-tempratur">38.06</span>&deg;C</h3>
+                        <h1 id="friday-condition" class="lead">Clouds</h1>
+                    </div>
+            </div>
+            <!-- <div class="col-md-3">
+                <div class="text-white text-center">
+                        <h1>Sunday</h1>
+                        <img id="sunday-weither-icone" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+                        <h1 id="sunday-city">Dhaka</h1>
+                        <h3><span id="sunday-tempratur">38.06</span>&deg;C</h3>
+                        <h1 id="sunday-condition" class="lead">Clouds</h1>
+                    </div>
+            </div> -->
+        </div>
+
+    </div>
+    
+   
+    
+
+    <script src="app.js"></script>
+</body>
+
+</html>
